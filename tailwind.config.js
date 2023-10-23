@@ -1,17 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{js, jsx}"],
 	theme: {
 		colors: {
-			primary: {
-				main: "#000461"
-			},
-			secondary: {
-				main: "#727CF5",
-				dark: "#A6ADFF85",
-				light: "#E8E9FF",
-				dark2: "#4E55AC"
-			}
+			primary: "#212830",
+			secondary: "#08BB94",
+			light: "#fff",
+			iconHover: "rgba(255, 255, 255, 0.7)",
+			dark: "#000"
 		},
 		extend: {
 			backgroundSize: {
