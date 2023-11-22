@@ -1,4 +1,4 @@
-import logo from '../../logo.svg';
+import logo from '../../../logo.svg';
 
 import { motion } from 'framer-motion';
 

@@ -28,7 +28,7 @@ const Navbar = () => {
 		hover: {
 			width: "100%",
 			left: 0,
-			transition: {ease: "easeIn", duration: 0.3}
+			transition: { ease: "easeIn", duration: 0.3 }
 		},
 	}
 	return (
@@ -39,11 +39,11 @@ const Navbar = () => {
 				initial={{ x: "50%", scale: 0 }}
 				animate={{ x: 0, scale: 1 }}
 				transition={{ duration: 0.5, delay: 0.5 }}
-				>
+			>
 				<motion.a
 					href="/"
 					whileHover={{ scale: 1.2, color: "#08BB94", borderBottomLeftRadius: "10px", borderBottomColor: "#08BB04", borderBottomStyle: "solid" }}
-					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px"}}
+					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px" }}
 					transition={{ duration: 0.2 }}
 				>
 					About
@@ -51,7 +51,7 @@ const Navbar = () => {
 				<motion.a
 					href="/"
 					whileHover={{ scale: 1.2, color: "#08BB94", borderBottomLeftRadius: "10px", borderBottomColor: "#08BB04", borderBottomStyle: "solid" }}
-					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px"}}
+					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px" }}
 					transition={{ duration: 0.2 }}
 				>
 					Experience
@@ -73,12 +73,12 @@ const Navbar = () => {
 					Contact
 				</motion.a>
 				<motion.a
-				initial="initial"
-				whileHover="hover"
-				variants={dlBtnStyle}
+					initial="initial"
+					whileHover="hover"
+					variants={dlBtnStyle}
 				>Download CV
-				<motion.span variants={blBtnBgStyle}>
-				</motion.span></motion.a>
+					<motion.span variants={blBtnBgStyle}>
+					</motion.span></motion.a>
 			</motion.div>
 		</nav>
 	)
