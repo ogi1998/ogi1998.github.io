@@ -1,36 +1,9 @@
+import Button from "../../ui/Button"
 import Logo from "./Logo"
 
 import { motion } from "framer-motion"
+
 const Navbar = () => {
-	const dlBtnStyle = {
-		initial: {
-			position: "relative",
-			borderRadius: "4px",
-			fontSize: "20px",
-			padding: "12px 20px",
-			cursor: "pointer",
-			color: "#08BB94",
-			border: "1px solid #08BB94",
-		},
-		hover: {
-			color: "#fff"
-		}
-	};
-	const blBtnBgStyle = {
-		initial: {
-			position: "absolute",
-			left: '50%',
-			top: 0,
-			height: "100%",
-			backgroundColor: "#08BB94",
-			zIndex: -1,
-		},
-		hover: {
-			width: "100%",
-			left: 0,
-			transition: { ease: "easeIn", duration: 0.3 }
-		},
-	}
 	return (
 		<nav className="flex justify-between items-center py-5">
 			<Logo width={80} />
@@ -64,21 +37,7 @@ const Navbar = () => {
 				>
 					Work
 				</motion.a>
-				<motion.a
-					href="/"
-					whileHover={{ scale: 1.2, color: "#08BB94" }}
-					initial={{ scale: 1, color: "#fff" }}
-					transition={{ duration: 0.2 }}
-				>
-					Contact
-				</motion.a>
-				<motion.a
-					initial="initial"
-					whileHover="hover"
-					variants={dlBtnStyle}
-				>Download CV
-					<motion.span variants={blBtnBgStyle}>
-					</motion.span></motion.a>
+				<Button to="/">Download CV</Button>
 			</motion.div>
 		</nav>
 	)

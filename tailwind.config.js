@@ -4,8 +4,8 @@ module.exports = {
 		colors: {
 			primary: "#212830",
 			secondary: "#08BB94",
-			light: "#fff",
-			iconHover: "rgba(255, 255, 255, 0.7)",
+			gray: "#B5B5C1",
+			light: "#FFF",
 			dark: "#000"
 		},
 		extend: {
@@ -24,8 +24,8 @@ module.exports = {
 				"small": "0px 0px 7px",
 				"normal": "0px 1px 10px",
 				"normal-hover": "0px 1px 20px",
-				"normal-focused": "0px 1px 30px"
-			},
+				"normal-focused": "0px 1px 30px",
+			}
 		}
 	},
 	plugins: []
