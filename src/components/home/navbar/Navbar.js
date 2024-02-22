@@ -3,7 +3,10 @@ import Logo from "./Logo"
 
 import { motion } from "framer-motion"
 
+import {theme} from '../../../tailwind.config';
+
 const Navbar = () => {
+	const colors = theme.colors;
 	return (
 		<nav className="flex justify-between items-center py-5">
 			<Logo width={80} />
@@ -15,24 +18,27 @@ const Navbar = () => {
 			>
 				<motion.a
 					href="/"
-					whileHover={{ scale: 1.2, color: "#08BB94", borderBottomLeftRadius: "10px", borderBottomColor: "#08BB04", borderBottomStyle: "solid" }}
-					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px" }}
+					whileHover={{ scale: 1.2, color: colors.secondary }}
+					whileTap={{scale: 1}}
+					initial={{ scale: 1, color: colors.light }}
 					transition={{ duration: 0.2 }}
 				>
 					About
 				</motion.a>
 				<motion.a
 					href="/"
-					whileHover={{ scale: 1.2, color: "#08BB94", borderBottomLeftRadius: "10px", borderBottomColor: "#08BB04", borderBottomStyle: "solid" }}
-					initial={{ scale: 1, color: "#fff", borderBottomLeftRadius: "10px" }}
+					whileHover={{ scale: 1.2, color: colors.secondary }}
+					whileTap={{scale: 1}}
+					initial={{ scale: 1, color: colors.light}}
 					transition={{ duration: 0.2 }}
 				>
 					Experience
 				</motion.a>
 				<motion.a
 					href="/"
-					whileHover={{ scale: 1.2, color: "#08BB94" }}
-					initial={{ scale: 1, color: "#fff" }}
+					whileHover={{ scale: 1.2, color: colors.secondary }}
+					whileTap={{scale: 1}}
+					initial={{ scale: 1, color: colors.light }}
 					transition={{ duration: 0.2 }}
 				>
 					Work

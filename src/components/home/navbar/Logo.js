@@ -1,21 +1,13 @@
 import logo from '../../../logo.svg';
 
 import { motion } from 'framer-motion';
+import {theme} from '../../../tailwind.config';
 
 const Logo = ({ width }) => {
+	const colors = theme.colors;
 	const containerStyle = {
-		initial: {
-			scale: 0.1,
-			position: "absolute",
-			x: "40vw", y: "50vh",
-			padding: 0
-		},
-		animate: {
-			scale: 1, position: "relative", x: 0, y: 0
-		},
-		transition: {
-			duration: 1
-		}
+		initial: {x: "42vw", y: "45vh", scale: 0},
+		animate: {x: 0, y: 0, scale: 1, transition: {duration: 1}}
 	}
 	const spanStyle = {
 		initial: {
@@ -27,24 +19,23 @@ const Logo = ({ width }) => {
 			cursor: "pointer"
 		},
 		hover: {
-			boxShadow: '0 1px 15px #fff',
-
+			boxShadow: `0 1px 15px ${colors.light}`
 		}
 	}
 	return (
-		<motion.div
+		<motion.button
 			initial="initial"
 			animate="animate"
 			whileHover="hover"
+			whileTap = "tap"
 			variants={containerStyle}
-			transition={{ duration: 1 }}
 		>
 			<motion.img src={logo} width={width} alt='logo' />
 			<motion.span
 				variants={spanStyle}
 			>
 			</motion.span>
-		</motion.div>
+		</motion.button>
 	)
 }
 export default Logo

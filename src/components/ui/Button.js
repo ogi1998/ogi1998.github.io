@@ -1,6 +1,10 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
+import { theme } from "../../tailwind.config";
 
 const Button = ({to, children, className=""}) => {
+	const colors = theme.colors;
+
 	const btnStyle = {
 		initial: {
 			position: "relative",
@@ -8,12 +12,12 @@ const Button = ({to, children, className=""}) => {
 			borderRadius: "4px",
 			padding: "12px 20px",
 			cursor: "pointer",
-			color: "#08BB94",
-			border: "1px solid #08BB94",
+			color: colors.secondary,
+			border: `1px solid ${colors.secondary}`,
 			zIndex: 10
 		},
 		hover: {
-			color: "#fff"
+			color: colors.light
 		}
 	};
 	const bgStyle = {
@@ -22,7 +26,7 @@ const Button = ({to, children, className=""}) => {
 			left: '50%',
 			top: 0,
 			height: "100%",
-			backgroundColor: "#08BB94",
+			backgroundColor: colors.secondary,
 			zIndex: -1
 		},
 		hover: {

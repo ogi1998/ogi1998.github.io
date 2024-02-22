@@ -1,6 +1,6 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 <g id="logo">
 <path d="M100,20 A40,40 0 1,0 100,180 A40,40 0 1,0 100,20" fill="transparent" stroke="white" style="stroke-width:10" />
-<path d="M70,80 L100,130 L130,80" fill="transparent" stroke="#08BB94" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 20;" />
+<path d="M70,80 L100,130 L130,80" fill="transparent" stroke="#768CE6" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 20;" />
 </g>
 </svg>

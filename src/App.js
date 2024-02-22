@@ -5,10 +5,9 @@ import LoadingScreen from "./components/loading/LoadingScreen"
 const App = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	return (
-		<>
-		{isLoading ? <LoadingScreen setIsLoading={setIsLoading} /> : <Home />}
-		</>
-
+		<div className="bg-primary min-h-screen">
+			{isLoading ? <LoadingScreen setIsLoading={setIsLoading} /> : <Home />}
+		</div>
 	)
 }
 export default App
