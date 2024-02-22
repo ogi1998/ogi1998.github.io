@@ -7,18 +7,14 @@ const LoadingScreen = ({setIsLoading}) => {
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			setIsLoading(false);
-		}, 3000);
+		}, 2500);
 
 		return () => clearTimeout(timeout);
 	}, [setIsLoading]);
 
 	return (
 		<motion.div
-		className='bg-dark w-screen h-screen flex items-center justify-center absolute top-0'
-		initial={{scale: 1}}
-		animate={{scale: 0}}
-		transition={{duration: 0.5, delay: 3}}
-		>
+		className='w-screen h-screen flex items-center justify-center absolute top-0'>
 			<Icon />
 		</motion.div>
 	);

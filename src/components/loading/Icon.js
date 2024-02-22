@@ -1,7 +1,10 @@
 import { motion, useAnimation } from "framer-motion"
 import { useEffect } from "react";
+import { theme } from "../../tailwind.config";
 
 const Icon = () => {
+	const colors = theme.colors;
+
 	const circleControls = useAnimation();
 	const vControls = useAnimation();
 
@@ -29,7 +32,7 @@ const Icon = () => {
 	}, [circleControls, vControls]);
 	return (
 		<svg width="200" height="200">
-			<motion.path className="secondary"
+			<motion.path
 				d="M100,20 A80,80 0 1,0 100,180 A80,80 0 1,0 100,20"
 				initial={{ pathLength: 1, pathOffset: 1 }}
 				animate={circleControls}
@@ -43,7 +46,7 @@ const Icon = () => {
 				initial={{ pathLength: 1, pathOffset: 1 }}
 				animate={vControls}
 				fill="transparent"
-				stroke="#08BB94"
+				stroke={colors.secondary}
 				strokeWidth="20"
 				style={{ strokeLinecap: "round", strokeLinejoin: "round" }}
 			/>
