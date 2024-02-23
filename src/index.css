@@ -1,17 +1,7 @@
-@config "tailwind.config.js";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-	background-color: #212830;
-}
-::-webkit-scrollbar-thumb {
-	background-color: #9F8FEF;
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: #b6acec;
+	display: none;
 }

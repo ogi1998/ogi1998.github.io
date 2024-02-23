@@ -11,7 +11,6 @@ const imgs = [iconHTML, iconCSS, iconJS, iconREACT, iconSASS, iconTW];
 const Technologies = () => {
 	return (
 		<motion.div
-			className='mt-10'
 			initial={{ scale: 0 }}
 			animate={{ scale: 1 }}
 			transition={{ duration: 1.5, delay: 1.75, bounce: 0.5, type: 'spring' }}>
