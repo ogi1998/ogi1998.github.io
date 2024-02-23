@@ -61,8 +61,8 @@ const Hero = () => {
                 </motion.a>
             </div>
             <div className="flex gap-5">
-                <Button to="/" className="text-2xl block">
-                    Let's Get in touch!
+                <Button to="mailto:ogivuja@gmail.com" className="text-2xl block">
+                    Let's get in touch!
                 </Button>
             </div>
         </motion.div>

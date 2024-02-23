@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
+
 import Title from "../../ui/Title";
 import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
 
 const Experience = () => {
     return (
-        <div className="mt-20 flex flex-col items-center">
+        <motion.div className="mt-20 flex flex-col items-center" transition={{type: 'tween', duration: 1}} initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}}  viewport={{ once: true }}>
             <Title text="EDUCATION & EXPERIENCE" />
             <div className="flex justify-center gap-20">
                 <Timeline>
@@ -121,7 +123,7 @@ const Experience = () => {
                     />
                 </Timeline>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
