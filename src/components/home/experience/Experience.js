@@ -6,14 +6,14 @@ import TimelineItem from "./TimelineItem";
 
 const Experience = () => {
     return (
-        <motion.div className="mt-20 flex flex-col items-center" transition={{type: 'tween', duration: 1}} initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}}  viewport={{ once: true }}>
+        <motion.div className="my-20 flex flex-col" transition={{type: 'tween', duration: 1}} initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}}  viewport={{ once: true }}>
             <Title text="EDUCATION & EXPERIENCE" />
             <div className="flex justify-center gap-20">
                 <Timeline>
                     <TimelineItem
                         title="Bachelor of Science, Computer Science"
                         time="Oct 2018 - Oct 2023"
-                        companyName="Paneuropean university Apeiron"
+                        companyName="Paneuropean university Apeiron | Banja Luka, BiH"
                         companyLink="https://apeiron-uni.eu"
                         description="The Degree is focused to gain core knowledge in computer science. 
                         I majored in Software Engineering and majority of my subjects were related to software engineering."
@@ -29,8 +29,8 @@ const Experience = () => {
                     <TimelineItem
                         title="High School Diploma, Computer Science"
                         time="Sep 2014 - May 2018"
-                        companyName="Paneuropean university Apeiron"
-                        companyLink="https://apeiron-uni.eu"
+                        companyName="Information Technology Gymnasium | Prnjavor, BiH"
+                        companyLink="https://gimnazijaprnjavor.com/"
                         description="The school is focused on Information Technologies and programming.
                         I had additional subjects related to programming, databases, operating systems and computer networks."
                         skills={[
@@ -46,7 +46,7 @@ const Experience = () => {
                     <TimelineItem
                         title="Software Developer"
                         time="Feb 2024 - PRESENT"
-                        companyName="ElevateBits"
+                        companyName="ElevateBits | Banja Luka, BiH"
                         companyLink="https://elevatebits.com"
                         description="Working on projects for multiple clients as a Frontend Developer mostly working with React."
                         skills={[
@@ -66,7 +66,7 @@ const Experience = () => {
                     <TimelineItem
                         title="Software Developer"
                         time="Aug 2022 - Feb 2024"
-                        companyName="Develabs"
+                        companyName="Develabs | Banja Luka, BiH"
                         companyLink="https://develabs.com"
                         description="Working in R&D team mainly on developing Jedox Web. Working on Subset Editor, 
                         a main tool for querying and filtering data inside Jedox."
@@ -87,7 +87,7 @@ const Experience = () => {
                     <TimelineItem
                         title="Web Developer"
                         time="Dec 2019 - Aug 2022"
-                        companyName="Paneuropean university Apeiron"
+                        companyName="Paneuropean university Apeiron | Banja Luka, BiH"
                         companyLink="https://apeiron-uni.eu"
                         description="Worked on developing and maintaining main University website. 
                         I was also responsible for maintenance of other services that university uses."
