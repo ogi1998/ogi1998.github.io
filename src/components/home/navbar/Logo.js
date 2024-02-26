@@ -28,7 +28,6 @@ const Logo = ({ width }) => {
             initial="initial"
             animate="animate"
             whileHover="hover"
-            whileTap="tap"
             variants={containerStyle}
         >
             <motion.img src={logo} width={width} alt="logo" />
