@@ -9,7 +9,6 @@ const Button = ({ to, children, className = "" }) => {
         initial: {
             position: "relative",
             display: "inline-block",
-            borderRadius: "4px",
             padding: "12px 20px",
             cursor: "pointer",
             color: colors.secondary,
