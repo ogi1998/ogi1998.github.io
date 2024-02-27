@@ -46,7 +46,7 @@ const Project = ({ title, stack, link, imgSrc, animDelay = 0 }) => {
             <motion.div whileHover="hover" initial="initial">
                 <motion.div
                     variants={infoStyle}
-                    className="z-100 absolute top-0 left-0 flex flex-col items-center justify-around w-full h-full gap-10 bg-primary"
+                    className="z-100 absolute top-0 left-0 flex flex-col items-center justify-around w-full h-full gap-10 bg-dprimary"
                 >
                     <motion.div className="text-center" variants={titleStyle}>
                         <h2 className="text-light font-bold text-2xl">

@@ -1,4 +1,5 @@
 import Scroll from "./Scroll"
+import Contact from "./contact/Contact"
 import Experience from "./experience/Experience"
 import Header from "./header/Header"
 import Navbar from "./navbar/Navbar"
@@ -12,6 +13,7 @@ const Home = () => {
 			<Header />
 			<Experience />
 			<Projects />
+			<Contact />
 		</div>
 	)
 }
