@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { theme } from "../../theme.js";
 
-const Button = ({ to, children, className = "" }) => {
+const Button = ({ to, children, className = "", type="button" }) => {
     const colors = theme.colors;
 
     const btnStyle = {
