@@ -1,7 +1,7 @@
 import Button from "../../ui/Button";
 import { motion } from "framer-motion";
 
-const Project = ({ title, stack, link, imgSrc, animDelay = 0 }) => {
+const Project = ({ title, stack, desc, link, imgSrc, animDelay = 0 }) => {
     const infoStyle = {
         initial: {
             opacity: 0,
@@ -48,10 +48,11 @@ const Project = ({ title, stack, link, imgSrc, animDelay = 0 }) => {
                     variants={infoStyle}
                     className="z-100 absolute top-0 left-0 flex flex-col items-center justify-around w-full h-full gap-10 bg-dprimary"
                 >
-                    <motion.div className="text-center" variants={titleStyle}>
+                    <motion.div className="text-center flex flex-col justify-between gap-5" variants={titleStyle}>
                         <h2 className="text-light font-bold text-2xl">
                             {title}
                         </h2>
+                        <p className="text-gray font-light italic text-center my-2">{desc}</p>
                         <p className="text-secondary text-lg italic">{stack}</p>
                     </motion.div>
                     <motion.div variants={btnStyle}>
