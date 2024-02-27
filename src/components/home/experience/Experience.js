@@ -6,7 +6,13 @@ import TimelineItem from "./TimelineItem";
 
 const Experience = () => {
     return (
-        <motion.div className="my-20 flex flex-col" transition={{type: 'tween', duration: 1}} initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}}  viewport={{ once: true }}>
+        <motion.div
+            className="my-20 flex flex-col"
+            transition={{ type: "tween", duration: 1 }}
+            initial={{ translateY: 300, opacity: 0 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            viewport={{ once: true }}
+        >
             <Title text="EDUCATION & EXPERIENCE" />
             <div className="flex justify-center gap-20">
                 <Timeline>

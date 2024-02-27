@@ -9,7 +9,7 @@ import brainiacsImg from "../../../assets/brainiacs.png";
 
 const Projects = () => {
     return (
-        <div>
+        <div className="mb-40">
             <Title text="PROJECTS" />
             <div className="flex flex-wrap w-full py-10">
                 <Project

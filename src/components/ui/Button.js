@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 
 import { theme } from "../../theme.js";
 
-const Button = ({ to, children, className = "" }) => {
+const Button = ({ to, children, className = "", type="button" }) => {
     const colors = theme.colors;
 
     const btnStyle = {
         initial: {
             position: "relative",
             display: "inline-block",
-            borderRadius: "4px",
             padding: "12px 20px",
             cursor: "pointer",
             color: colors.secondary,
