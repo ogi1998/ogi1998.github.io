@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { theme } from "../../theme.js";
 
-const Button = ({ to, children, className = "", type="button" }) => {
+const Button = ({ to, children, className = "" }) => {
     const colors = theme.colors;
 
     const btnStyle = {
@@ -41,6 +41,8 @@ const Button = ({ to, children, className = "", type="button" }) => {
             initial="initial"
             whileHover="hover"
             variants={btnStyle}
+            target="_blank"
+            rel="noreferrer"
         >
             {children}
             <motion.span variants={bgStyle}></motion.span>

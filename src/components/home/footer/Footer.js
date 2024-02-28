@@ -6,13 +6,15 @@ const Footer = () => {
     const colors = theme.colors;
     return (
         <div className="bg-dprimary mt-20 text-light p-10 flex flex-col items-center justify-center relative">
-            <div className="flex gap-14 text-4xl text-gray my-5">
+            <div className="flex gap-14 text-4xl text-gray my-5 mob:gap-16 mob:text-3xl">
                 <motion.a
                     whileHover={{ scale: 1.2, color: colors.secondary }}
                     whileTap={{ scale: 1 }}
                     initial={{ scale: 1, color: colors.gray }}
                     transition={{ duration: 0.2 }}
                     href="https://github.com/ogi1998"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <FaGithub />
                 </motion.a>
@@ -22,6 +24,8 @@ const Footer = () => {
                     initial={{ scale: 1, color: colors.gray }}
                     transition={{ duration: 0.2 }}
                     href="https://www.linkedin.com/in/ognjen-vujasinovic-6a38b8196/"
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <FaLinkedin />
                 </motion.a>
@@ -40,12 +44,12 @@ const Footer = () => {
                     initial={{ scale: 1, color: colors.gray }}
                     transition={{ duration: 0.2 }}
                     onClick={() => window.scrollTo({top: 0})}
-                    className="absolute right-0 mr-20"
+                    className="absolute right-0 mr-20 mob:relative mob:mr-0 cursor-pointer"
                 >
                     <FaArrowUp />
                 </motion.a>
             </div>
-            <p className="text-gray text-lg">Copyright <span className="text-secondary">&copy; 2024</span>, Ognjen Vujasinovic. All rights reserved.</p>
+            <p className="text-gray text-lg mob:text-sm">Copyright <span className="text-secondary">&copy; 2024</span>, Ognjen Vujasinovic. All rights reserved.</p>
         </div>
     );
 };

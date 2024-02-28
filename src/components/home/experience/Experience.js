@@ -7,14 +7,14 @@ import TimelineItem from "./TimelineItem";
 const Experience = () => {
     return (
         <motion.div
-            className="my-20 flex flex-col"
+            className="my-20 flex flex-col mob:my-5"
             transition={{ type: "tween", duration: 1 }}
             initial={{ translateY: 300, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             viewport={{ once: true }}
         >
             <Title text="EDUCATION & EXPERIENCE" />
-            <div className="flex justify-center gap-20">
+            <div className="flex justify-center gap-20 mob:gap-0">
                 <Timeline>
                     <TimelineItem
                         title="Bachelor of Science, Computer Science"
@@ -111,7 +111,7 @@ const Experience = () => {
                         title="Software Developer - Internship"
                         time="Nov 2021 - Apr 2022"
                         companyName="Planet Soft"
-                        companyLink="https://planetsoft.com"
+                        companyLink="https://planetsoft.ba"
                         description="I was a frontend developer intern, working on a Web portal social media application needed for company's internal needs.
                         I worked in a team of 10 people, where each had their field of expertise and daily tasks."
                         skills={[

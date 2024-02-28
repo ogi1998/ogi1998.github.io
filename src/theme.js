@@ -8,6 +8,11 @@ export const theme = {
         light: "#FFF",
         dark: "#000"
     },
+    screens: {
+        lap: {max: '1024px'},
+        tab: {max: '768px'},
+        mob: {max: '500px'}
+    },
     extend: {
         boxShadow: {
             "small": "0px 0px 7px",
