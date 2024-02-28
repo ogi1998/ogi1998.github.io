@@ -23,7 +23,7 @@ const Contact = () => {
             <p className="text-center text-gray text-lg py-5">
                 Fill in the form below or send me an email to: <span className="font-bold">ogivuja@gmail.com</span>
             </p>
-            <div className="flex flex-col w-1/3">
+            <div className="flex flex-col w-1/3 lap:w-2/3 tab:w-3/4">
                 <input
                     className="bg-dprimary text-light p-3 my-2 outline-0 border-b border-gray focus:border-secondary"
                     type="text"

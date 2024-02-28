@@ -8,10 +8,10 @@ import { theme } from "../../../theme.js";
 const Navbar = () => {
     const colors = theme.colors;
     return (
-        <nav className="flex justify-between items-center py-5">
+        <nav className="flex justify-between items-center py-5 mob:flex-col">
             <Logo width={80} />
             <motion.div
-                className="text-2xl text-light flex gap-20 items-center"
+                className="text-xl text-light flex gap-20 items-center tab:text-base tab:gap-10 mob:flex-col mob:mt-5"
                 initial={{ x: "50%", scale: 0 }}
                 animate={{ x: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
@@ -43,7 +43,7 @@ const Navbar = () => {
                 >
                     Work
                 </motion.a>
-                <Button to="/">Download CV</Button>
+                <Button to="/" className="tab:text-base">Download CV</Button>
             </motion.div>
         </nav>
     );

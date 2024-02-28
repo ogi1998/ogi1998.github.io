@@ -36,7 +36,7 @@ const Project = ({ title, stack, desc, link, imgSrc, animDelay = 0 }) => {
     };
     return (
         <motion.div
-            className="relative w-1/3"
+            className="relative w-1/3 lap:w-1/2 tab:w-full"
             transition={{ type: "tween", duration: 1, delay: animDelay }}
             initial={{ translateY: 300, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
@@ -46,17 +46,26 @@ const Project = ({ title, stack, desc, link, imgSrc, animDelay = 0 }) => {
             <motion.div whileHover="hover" initial="initial">
                 <motion.div
                     variants={infoStyle}
-                    className="z-100 absolute top-0 left-0 flex flex-col items-center justify-around w-full h-full gap-10 bg-dprimary"
+                    className="z-100 absolute top-0 left-0 flex flex-col items-center justify-around w-full h-full gap-10 bg-dprimary lap:gap-0"
                 >
-                    <motion.div className="text-center flex flex-col justify-between gap-5" variants={titleStyle}>
-                        <h2 className="text-light font-bold text-2xl">
+                    <motion.div
+                        className="text-center flex flex-col justify-between gap-5 lap:gap-0"
+                        variants={titleStyle}
+                    >
+                        <h2 className="text-light font-bold text-2xl lap:text-xl">
                             {title}
                         </h2>
-                        <p className="text-gray font-light italic text-center my-2">{desc}</p>
-                        <p className="text-secondary text-lg italic">{stack}</p>
+                        <p className="text-gray font-light italic text-center my-2 lap:text-sm">
+                            {desc}
+                        </p>
+                        <p className="text-secondary text-lg italic lap:text-base">
+                            {stack}
+                        </p>
                     </motion.div>
                     <motion.div variants={btnStyle}>
-                        <Button to={link}>SEE MORE</Button>
+                        <Button to={link} className="lap:text-base">
+                            SEE MORE
+                        </Button>
                     </motion.div>
                 </motion.div>
             </motion.div>

@@ -9,7 +9,7 @@ import Projects from "./projects/Projects"
 const Home = () => {
 	return (
 		<div className="min-h-screen bg-primary">
-			<div className="px-28">
+			<div className="px-28 tab:px-20 mob:px-5">
 				<Scroll />
 				<Navbar />
 				<Header />
