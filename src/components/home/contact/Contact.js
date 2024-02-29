@@ -26,7 +26,7 @@ const Contact = ({ elRef }) => {
                 <span className="font-bold">ogivuja@gmail.com</span>
             </p>
             <motion.div
-                className="flex flex-col w-1/3 lap:w-2/3 tab:w-3/4"
+                className="flex flex-col w-1/3 lap:w-2/3 tab:w-3/4 mob:w-full"
                 transition={{
                     type: "tween",
                     duration: 1,
