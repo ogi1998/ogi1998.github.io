@@ -7,7 +7,7 @@ import TimelineItem from "./TimelineItem";
 const Experience = ({ elRef }) => {
     return (
         <>
-            <span ref={elRef} className="pt-5 inline-block"></span>
+            <span ref={elRef} className="pt-5 mob:pt-10 inline-block"></span>
             <motion.div
                 className="my-20 flex flex-col mob:my-5"
                 transition={{ type: "tween", duration: 1 }}
