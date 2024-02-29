@@ -16,7 +16,7 @@ const Experience = ({ elRef }) => {
                 viewport={{ once: true }}
             >
                 <Title text="EDUCATION & EXPERIENCE" />
-                <div className="flex justify-center gap-20 mob:gap-0">
+                <div className="flex justify-center gap-20 mob:gap-0 mob:flex-col">
                     <Timeline>
                         <TimelineItem
                             title="Bachelor of Science, Computer Science"

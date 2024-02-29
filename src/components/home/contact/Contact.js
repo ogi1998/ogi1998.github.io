@@ -30,10 +30,10 @@ const Contact = ({ elRef }) => {
                 transition={{
                     type: "tween",
                     duration: 1,
-                    delay: 0.5
+                    delay: 0.5,
                 }}
-                initial={{ opacity: 0, scale: 0, translateX: 300 }}
-                whileInView={{ opacity: 1, scale: 1, translateX: 0 }}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
             >
                 <input
