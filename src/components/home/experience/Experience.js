@@ -4,14 +4,15 @@ import Title from "../../ui/Title";
 import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
 
-const Experience = () => {
+const Experience = ({elRef}) => {
     return (
         <motion.div
-            className="my-20 flex flex-col mob:my-5"
+            className="my-20 flex pt-5 flex-col mob:my-5"
             transition={{ type: "tween", duration: 1 }}
             initial={{ translateY: 300, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             viewport={{ once: true }}
+            ref={elRef}
         >
             <Title text="EDUCATION & EXPERIENCE" />
             <div className="flex justify-center gap-20 mob:gap-0">

@@ -3,7 +3,7 @@ import logo from "../../../logo.svg";
 import { motion } from "framer-motion";
 import { theme } from "../../../theme";
 
-const Logo = ({ width }) => {
+const Logo = ({ width, onClick }) => {
     const colors = theme.colors;
     const containerStyle = {
         initial: { x: "42vw", y: "45vh", scale: 0 },
@@ -29,6 +29,7 @@ const Logo = ({ width }) => {
             animate="animate"
             whileHover="hover"
             variants={containerStyle}
+            onClick={onClick}
         >
             <motion.img src={logo} width={width} alt="logo" />
             <motion.span variants={spanStyle}></motion.span>

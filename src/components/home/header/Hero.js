@@ -7,7 +7,7 @@ const Hero = () => {
     const colors = theme.colors;
     return (
         <motion.div
-            className="w-1/2 pt-20 lap:pt-10 lap: w-4/5 tab:w-full tab:flex tab:flex-col tab:items-center"
+            className="w-1/2 pt-20 lap:pt-10 lap:w-4/5 tab:w-full tab:flex tab:flex-col tab:items-center"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{

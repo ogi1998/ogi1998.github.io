@@ -2,7 +2,7 @@ import { useState } from "react";
 import Title from "../../ui/Title";
 import Button from "../../ui/Button";
 
-const Contact = () => {
+const Contact = ({elRef}) => {
     const [formState, setFormState] = useState({});
 
     function setField(event) {
@@ -14,7 +14,7 @@ const Contact = () => {
 
     const mailTo = `mailto:ogivuja@gmail.com?subject=${formState.subject} - ${formState.fname} ${formState.lname}&body=${formState.message}`;
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center pt-5" ref={elRef}>
             <Title text="CONTACT" />
             <p className="text-center text-gray text-lg py-5">
                 Got a project in mind and want to collaborate? Feel free to text

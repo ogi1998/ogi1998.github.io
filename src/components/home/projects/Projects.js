@@ -8,9 +8,10 @@ import stocksImg from "../../../assets/stocks.png";
 import brainiacsImg from "../../../assets/brainiacs.png";
 import cloggysImg from "../../../assets/cloggys.png";
 
-const Projects = () => {
+const Projects = ({elRef}) => {
     return (
-        <div className="mb-40">
+        <>
+        <div className="mb-40 pt-5" ref={elRef}>
             <Title text="PROJECTS" />
             <div className="flex flex-wrap w-full py-10">
                 <Project
@@ -63,6 +64,7 @@ const Projects = () => {
                 />
             </div>
         </div>
+        </>
     );
 };
 export default Projects;

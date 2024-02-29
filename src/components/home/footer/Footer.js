@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import { theme } from "../../../theme";
 
-const Footer = () => {
+const Footer = ({refs}) => {
     const colors = theme.colors;
     return (
         <div className="bg-dprimary mt-20 text-light p-10 flex flex-col items-center justify-center relative">
@@ -43,8 +43,8 @@ const Footer = () => {
                     whileTap={{ scale: 1 }}
                     initial={{ scale: 1, color: colors.gray }}
                     transition={{ duration: 0.2 }}
-                    onClick={() => window.scrollTo({top: 0})}
                     className="absolute right-0 mr-20 mob:relative mob:mr-0 cursor-pointer"
+                    onClick={() => refs.current['top'].scrollIntoView({behavior: 'smooth'})}
                 >
                     <FaArrowUp />
                 </motion.a>
