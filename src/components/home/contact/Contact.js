@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Title from "../../ui/Title";
 import Button from "../../ui/Button";
+import { motion } from "framer-motion";
 
-const Contact = ({elRef}) => {
+const Contact = ({ elRef }) => {
     const [formState, setFormState] = useState({});
 
     function setField(event) {
@@ -21,9 +22,20 @@ const Contact = ({elRef}) => {
                 me.
             </p>
             <p className="text-center text-gray text-lg py-5">
-                Fill in the form below or send me an email to: <span className="font-bold">ogivuja@gmail.com</span>
+                Fill in the form below or send me an email to:{" "}
+                <span className="font-bold">ogivuja@gmail.com</span>
             </p>
-            <div className="flex flex-col w-1/3 lap:w-2/3 tab:w-3/4">
+            <motion.div
+                className="flex flex-col w-1/3 lap:w-2/3 tab:w-3/4"
+                transition={{
+                    type: "tween",
+                    duration: 1,
+                    delay: 0.5
+                }}
+                initial={{ opacity: 0, scale: 0, translateX: 300 }}
+                whileInView={{ opacity: 1, scale: 1, translateX: 0 }}
+                viewport={{ once: true }}
+            >
                 <input
                     className="bg-dprimary text-light p-3 my-2 outline-0 border-b border-gray focus:border-secondary"
                     type="text"
@@ -60,7 +72,7 @@ const Contact = ({elRef}) => {
                 <Button className="self-end" to={mailTo}>
                     SUBMIT
                 </Button>
-            </div>
+            </motion.div>
         </div>
     );
 };
