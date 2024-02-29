@@ -15,7 +15,7 @@ const Technologies = () => {
 			animate={{ scale: 1 }}
 			transition={{ duration: 1.5, delay: 1.75, bounce: 0.5, type: 'spring' }}>
 			<h3 className="text-secondary text-center text-3xl font-light mob:text-xl">Technologies I work with:</h3>
-			<ul className=" list-none flex text-light gap-10 py-10 text-3xl mob:flex-wrap mob:justify-center">
+			<ul className=" list-none flex text-light gap-10 py-10 text-3xl mob:flex-wrap mob:justify-center mob:pb-16">
 				{imgs.map((img, idx) => (
 					<motion.li
 						key={idx}

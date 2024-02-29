@@ -10,7 +10,6 @@ import cloggysImg from "../../../assets/cloggys.png";
 
 const Projects = ({elRef}) => {
     return (
-        <>
         <div className="mb-40 pt-5" ref={elRef}>
             <Title text="PROJECTS" />
             <div className="flex flex-wrap w-full py-10">
@@ -64,7 +63,6 @@ const Projects = ({elRef}) => {
                 />
             </div>
         </div>
-        </>
     );
 };
 export default Projects;
