@@ -15,7 +15,8 @@ const Experience = ({ elRef }) => {
                 whileInView={{ translateY: 0, opacity: 1 }}
                 viewport={{ once: true }}
             >
-                <Title text="EDUCATION & EXPERIENCE" />
+                <Title text="EDUCATION & EXPERIENCE" className="mob:hidden" />
+                <Title text="EDUCATION" className="hidden mob:block" />
                 <div className="flex justify-center gap-20 mob:gap-0 mob:flex-col">
                     <Timeline>
                         <TimelineItem
@@ -50,6 +51,7 @@ const Experience = ({ elRef }) => {
                             ]}
                         />
                     </Timeline>
+                    <Title text="EXPERIENCE" className="hidden mob:block my-5" />
                     <Timeline>
                         <TimelineItem
                             title="Software Developer"
